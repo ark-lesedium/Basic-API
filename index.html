@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Custom API - Users</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d1117;
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #238636;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 30px;
+    }
+
+    table {
+      margin: 0 auto;
+      width: 70%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #30363d;
+    }
+
+    th {
+      background-color: #161b22;
+    }
+
+    #error {
+      color: red;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Users (From My API)</h1>
+  <button id="loadButton">Load Users</button>
+
+  <div id="error"></div>
+
+  <table id="userTable" style="display:none;">
+    <thead>
+      <tr><th>Name</th><th>Email</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <!-- Link to external JavaScript file -->
+  <script src="./script.js"></script>
+</body>
+</html>
